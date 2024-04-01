@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col, Button, Form } from "react-bootstrap";
 
-const ContactItem = () => {
+const ContactItem = ({ item }) => {
   return (
     <div>
       <Row>
@@ -12,12 +12,8 @@ const ContactItem = () => {
           />
         </Col>
         <Col lg={11}>
-        <div>
-            이름
-        </div>
-        <div>
-            전화번호
-        </div>
+          <div>{item.name}</div>
+          <div>{item.phonNumber}</div>
         </Col>
       </Row>
     </div>
