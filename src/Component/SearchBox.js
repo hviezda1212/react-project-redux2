@@ -16,12 +16,12 @@ const SearchBox = () => {
         <Col>
           <Form.Control
             type="text"
-            placeholder="name"
+            placeholder=""
             onChange={(event) => setKeyword(event.target.value)}
           />
         </Col>
         <Col>
-          <Button type="submit">Search</Button>
+          <Button type="submit">검색</Button>
         </Col>
       </Row>
     </Form>
